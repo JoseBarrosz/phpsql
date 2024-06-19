@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infotec - PHP e SQL</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <header>
+    <div class="container">
+      <div class="font-buttons">
+        <button onclick="aumentarFonte()">A+</button>
+        <button onclick="diminuirFonte()">A-</button>
+        <button id="toggle-theme" onclick="alternarTema()">🌙</button>
+      </div>
+    </div>
+  </header>
+<br>
+<h1>Infotec - PHP e SQL</h1>
+
+  <div class="filter-section">
+    <label for="color-filter">Filtro de Daltonismo:</label>
+    <select id="color-filter">
+      <option value="default">Cores padrão</option>
+      <option value="achromatomaly">Acromatopsia</option>
+      <option value="acromatomia">Acromatomia</option>
+      <option value="deuteromalacia">Deuteranomalia</option>
+      <option value="deuteranomaly">Deuteranopia</option>
+      <option value="tritanomaly">Tritanomalia</option>
+      <option value="protanomaly">Protanopia</option>
+    </select>
+  </div>
+
+  
+  <div class="description-section">
+    <h2>Sobre o Projeto</h2>
+    <p>Este projeto foi desenvolvido para demonstrar as habilidades em PHP e SQL. Aqui você encontrará exemplos práticos e exercícios que ilustram como essas tecnologias podem ser usadas para criar aplicações web dinâmicas e interativas.</p>
+  </div>
+
+  <div class="roxo">
+  <h3>Explore mais sobres as tecnologias:</h3>
+
+
+  <div class="container">
+    <a href="atvd/index1.html" target="_blank" class="box">
+      <div>
+        <img src="img/php.png" alt="Imagem 1" class="filter-image">
+      </div>
+    </a>
+    <a href="atvd/index2.html" target="_blank" class="box">
+      <div>
+        <img src="https://pbs.twimg.com/profile_images/1255113654049128448/J5Yt92WW_400x400.png" alt="Imagem 2" class="filter-image">
+      </div>
+    </a>
+  </div>
+
+</div>
+
+ 
+  <footer>
+    <p>&copy; 2024 Infotec - PHP e SQL. Todos os direitos reservados.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

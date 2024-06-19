@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infotec - PHP e SQL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+    <header>
+        
+        <div class="font-buttons">
+            <button onclick="aumentarFonte()">A+</button>
+            <button onclick="diminuirFonte()">A-</button>
+            <button id="toggle-theme" onclick="alternarTema()">🌙</button>
+        </div>
+    </header>
+
+    <br>
+    <h1>Infotec - PHP e SQL</h1>
+
+    <main>
+        <div class="filter-section">
+            <label for="color-filter">Filtro de Daltonismo:</label>
+            <select id="color-filter">
+                <option value="default">Cores padrão</option>
+                <option value="achromatomaly">Acromatopsia</option>
+                <option value="acromatomia">Acromatomia</option>
+                <option value="deuteromalacia">Deuteranomalia</option>
+                <option value="deuteranomaly">Deuteranopia</option>
+                <option value="tritanomaly">Tritanomalia</option>
+                <option value="protanomaly">Protanopia</option>
+            </select>
+        </div>
+    </main>
+
+    <br><br><br>
+    
+
+    <main>
+        <section class="center-content">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>O que é PHP?</h2>
+                    <h3>O PHP é uma linguagem de programação usada principalmente para desenvolvimento web. Ela processa scripts no servidor para criar páginas dinâmicas e interativas.</h3>
+                </div>
+                <div class="image-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" alt="Imagem PHP" class="filter-image" width="400">
+                </div>
+            </div>
+
+            <br><br><br>
+            <hr>
+            <h2>Atividades PHP</h2>
+            
+            <div class="content-atvd">
+                <div class="text-atvd">
+                    <p><h3>A tela de login em PHP é onde os usuários inserem seu nome de usuário e senha para acessar um sistema. O PHP valida essas informações e, se corretas, permite o acesso; caso contrário, exibe uma mensagem de erro. </h3></p>
+                </div>
+                <div class="tela-login">
+                    <form action="login.php" method="post" class="login-form">
+                        <label for="username">Usuário:</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required>
+                        <button type="submit">Entrar</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <br><br><br>
+
+            <div class="content-atvd">
+                <div class="text-atvd">
+                    <p><h3>Um formulário em PHP é usado para coletar dados do usuário, como nome, senha ou outras informações. O PHP processa esses dados após o envio do formulário, realizando operações como salvar informações em um banco de dados ou exibir mensagens de validação ao usuário.</h3></p>
+                </div>
+                <div class="tela-login">
+                    <form action="formulario.php" method="post" class="login-form">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <br><br><br>
+
+    <footer>
+        <p>&copy; 2024 Infotec - PHP e SQL. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

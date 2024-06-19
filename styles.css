@@ -1,0 +1,209 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #767AB2;
+  color: #767AB2;
+  padding: 30px 0;
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+p{
+  font-size: 1.2rem;  
+
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5rem; /* Aumenta o tamanho da fonte do h1 */
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem; /* Aumenta o tamanho da fonte do h1 */
+}
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem; /* Aumenta o tamanho da fonte do h1 */
+  text-align: center;
+  margin-top: 40px ;
+}
+
+.text-content h2 {
+  font-family: 'Lora', serif;
+  font-size: 2.5rem; /* Aumenta o tamanho da fonte do h2 */
+}
+
+.filter-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-section label {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.filter-section select {
+  font-family: 'Lora', serif;
+  padding: 1px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff; /* Cor de fundo do seletor */
+  color: #333; /* Cor do texto do seletor */
+}
+
+.filter-section select:hover,
+.filter-section select:focus {
+  border-color: #555; /* Cor da borda quando hover/focus */
+}
+
+.filter-section select option {
+  background-color: #fff; /* Cor de fundo das opções do seletor */
+  color: #333; /* Cor do texto das opções do seletor */
+}
+
+.filter-section select option:hover {
+  background-color: #f0f0f0; /* Cor de fundo das opções do seletor quando hover */
+}
+
+.description-section {
+  text-align: left;
+  margin: 20px auto;
+  width: 70%;
+  margin-bottom: -100px;
+  
+}
+
+.description-section h2 {
+  text-align: left;
+  
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.box:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #767AB2;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  margin-top: 100px;
+}
+
+.font-buttons {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
+.font-buttons button, .font-buttons select {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.font-buttons button:hover, .font-buttons select:hover {
+  background-color: #777;
+}
+
+/* Tema escuro */
+body.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+header.dark-theme, footer.dark-theme {
+  background-color: #1f1f1f;
+}
+
+/* Tema claro */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+header.light-theme, footer.light-theme {
+  background-color: #f1f1f1;
+}
+
+/* Filtros de Daltonismo */
+.filter-image.achromatomaly {
+  filter: grayscale(100%);
+}
+
+.filter-image.acromatomia {
+  filter: grayscale(50%);
+}
+
+.filter-image.deuteranomaly {
+  filter: hue-rotate(180deg);
+}
+
+.filter-image.deuteromalacia {
+  filter: hue-rotate(30deg);
+}
+
+.filter-image.tritanomaly {
+  filter: sepia(100%) saturate(300%) hue-rotate(-50deg);
+}
+
+.filter-image.protanomaly {
+  filter: sepia(35%) saturate(100%);
+}
+
+.roxo{
+  background-color: #767AB2;
+  padding-top : 10px;
+  padding-bottom: 70px;
+  margin: 200px;
+  border-radius: 10px;
+  
+
+}
